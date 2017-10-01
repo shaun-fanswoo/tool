@@ -1,0 +1,110 @@
+html,
+body {
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+/* headbar*/
+#nav-main{
+      background-color: #343a40;
+}
+.nav-item{
+  cursor: pointer;
+}
+
+@media screen and  (min-width: 769px){
+  .navbar-brand{
+    width: 25%;
+  }
+  .nav.navbar-nav{
+    width:70%;
+        flex-direction: inherit !important;
+  }
+  ul li{
+        float: left;
+    width:25%;
+  }
+}
+@media screen and  (max-width: 768px){
+  .nav.navbar-nav{
+    width:100%;
+    text-align: center;
+    display:none;
+  }
+
+}
+/* cover */
+
+#cover {
+    background: #222 url('http://buildabeer2015.com/wp-content/uploads/photo-gallery/photo-1436891620584-47fd0e565afb.jpeg') center center no-repeat;
+    background-size: cover;
+    color: white;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#cover-caption {
+    width: 100%;
+}
+
+.col-sm-10.col-sm-offset-1{
+  margin:auto;
+}
+.form-inline{
+  margin: auto;
+  width: 71%;
+  overflow: hidden;
+  
+}
+.form-group{
+  width: auto;
+ 
+}
+.form-group input{
+      width: 100% !important;
+}
+
+.btn.btn-info.btn-lg{
+    margin:auto;
+  }
+.btn.btn-info.btn-lg:hover{
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+.btn.btn-info.btn-lg:active{
+    background-color: #c82333;
+    background-image: none;
+    border-color: #bd2130;
+  }
+.btn.btn-info.btn-lg:focus{
+box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.5);
+}
+  
+h1.active{
+  color:red;
+}
+
+@media screen and  (max-width: 1200px){
+  .form-group{
+    margin-bottom: 5% !important;
+  }
+}
+@media screen and  (max-width: 960px){
+
+  .form-group{
+    width:100%;
+    
+  }
+
+  .btn.btn-info.btn-lg{
+    width:200px;
+    margin:auto;
+    margin-top: 5%;
+  }
+}
+
