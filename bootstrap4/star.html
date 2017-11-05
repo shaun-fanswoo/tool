@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles/css/star.css"></link> 
+  <title>fanswoo</title>
+  <script>
+        var tiggerTimes = 0;
+      	$(document).on('click','.btn',function(){
+            tiggerTimes++;
+            var imgName = 'S';
+            var i = 1;
+            if (tiggerTimes == 3 || tiggerTimes == 4){
+                $('img').toggleClass('shine');
+                imgName = 'O';
+                if(tiggerTimes == 4){
+                tiggerTimes=0;//rest
+                };
+            };
+            $('img').each(function (){//changeImg
+                $(this).attr('src','img/star'+imgName+'_'+i+'.png');
+                i++;
+            });
+            $('img').toggleClass('show');
+	    });
+  </script>
+</head>
+
+<body>
+    <section>
+        <div class="item">
+            <img src="img/starS_1.png">
+            <img src="img/starS_2.png">
+            <img src="img/starS_3.png">
+            <img src="img/starS_4.png">
+            <img src="img/starS_5.png">
+            <img src="img/starS_6.png">
+            <img src="img/starS_7.png">
+            <img src="img/starS_8.png">
+        </div>
+        <div class="btn btn-info btn-lg">click</div>
+    </section>
+</body>
+</html>

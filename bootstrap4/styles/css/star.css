@@ -1,0 +1,86 @@
+section{
+    background-image: url(../../img/background.png);
+    height: 100vh;
+    background-size: cover;
+}
+.item{
+    width: 15%;
+    height: 25%;
+    margin: 10% 0% 0 59%;
+    
+    position: absolute;
+
+}
+@media screen and  (max-width: 1366px){
+    .item{
+    top: 20%;
+    right: 27%;
+    margin: 0%;
+    }
+}
+
+img{
+    position: absolute;
+    transform:  scaleX(0) scaleY(0);
+}
+.show{
+    transform:  scaleX(1) scaleY(1);
+}
+.shine{
+    animation: ease-in-out breathe 800ms infinite alternate;
+}
+img:nth-child(1){
+    left: 0%;
+    top: 4%;
+    transition: 1s .3s;
+}
+img:nth-child(2){
+    right: 17%;
+    top: 56%;
+    transition: 1s .6s;
+}
+img:nth-child(3){
+    left: 73%;
+    top: 24%;
+    transition: 1s .9s;
+}
+img:nth-child(4){
+    left: 21%;
+    top: 65%;
+    transition: 1s 1.2s;
+}
+img:nth-child(5){
+    top: 35%;
+    left: 40%;
+    transition: 1s 1.5s;
+}
+img:nth-child(6){
+    left: 78%;
+    top: 0px;
+    transition: 1s 1.8s;
+}
+img:nth-child(7){
+    top: -24%;
+    left: 30%;
+    transition: 1s 2.1s;
+}
+img:nth-child(8){
+    top: 41%;
+    left: 7%;
+    transition: 1s 2.4s;
+}
+.btn{
+    left: 25%;
+    top: 50%;
+    position: absolute;
+    cursor: pointer;
+}
+
+@keyframes breathe {
+    0% {
+        opacity: .4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
