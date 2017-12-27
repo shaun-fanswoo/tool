@@ -1,0 +1,36 @@
+<ul id="timer-tens">
+        <li>0<li>1<li>2<li>3<li>4<li>5<li>6<li>7<li>8<li>9<li>0
+    </ul>
+    <ul class="time_ten4">
+        <li>4
+    </ul>
+    <ul id="timer-ones">
+        <li>0<li>1<li>2<li>3<li>4<li>5<li>6<li>7<li>8<li>9<li>0
+    </ul>
+    <ul class="time_one4">
+        <li>4
+    </ul>
+</ul>
+
+
+ul#timer-ones { animation: rollover_2 5s cubic-bezier(1.000, 0.005, 0.995, 0.090); } 
+ul#timer-tens { animation: rollover_1 5s cubic-bezier(1.000, 0.005, 0.995, 0.090) infinite; } 
+@keyframes rollover_2 {
+  0% { top: -159px; }
+  10% { top: -318px; }
+  20% { top: -477px; }
+}  
+ 
+@keyframes rollover_1 {
+  0% { top: -159px; }
+  10% { top: -318px; }
+  20% { top: -477px; }
+  30% { top: -636px; }
+  40% { top: -795px; }
+  50% { top: -954px; }
+  60% { top: -1113px; }
+  70% { top: -1272px; }
+  80% { top: -1431px; }
+  90% { top: -1590px; }
+  100% { top: -1749px; }
+}    

@@ -1,0 +1,9 @@
+jq select input with name
+
+$('.input[name=record_item_showpieceid]');
+
+判斷是否勾選
+$('input').prop('checked')
+
+勾選
+$('input').prop('checked', true);
